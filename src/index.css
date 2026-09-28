@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* ═══ Design Tokens ═══ */
+@theme {
+  --color-bg: #0a0a0a;
+  --color-bg-card: #111111;
+  --color-bg-elevated: #1a1a1a;
+  --color-gold: #C0C0C0;
+  --color-gold-hover: #E5E4E2;
+  --color-gold-muted: rgba(192, 192, 192, 0.15);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-text-secondary: rgba(255, 255, 255, 0.7);
+
+  --font-heading: "Pragati Narrow", sans-serif;
+}
+
+/* ═══ Base ═══ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ═══ Scroll Reveal ═══ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
