@@ -1,4 +1,3 @@
-import heroProductImg from '../assets/LU-S-30-ml.webp'
 
 export default function Hero() {
   return (

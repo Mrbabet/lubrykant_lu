@@ -1,6 +1,3 @@
-import imgWater30 from '../assets/LU-W-30-ml.webp'
-import imgSilicone30 from '../assets/LU-S-30-ml.webp'
-import imgLuxury from '../assets/optimized/DSC01319.jpg'
 
 export default function Collection() {
   const products = [
