@@ -34,11 +34,11 @@ export default function Story() {
             </p>
           </div>
 
-          <div className="reveal">
+          <div className="reveal flex justify-center md:justify-end">
             <img
               src={storyImg}
               alt="LU — luksusowy lubrykant w intymnym otoczeniu"
-              className="rounded-2xl object-cover shadow-2xl opacity-90 max-h-[600px] w-full"
+              className="h-auto w-full max-w-md rounded-2xl object-cover shadow-2xl opacity-90"
               loading="lazy"
             />
           </div>

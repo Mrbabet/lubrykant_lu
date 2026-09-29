@@ -7,23 +7,16 @@ export default function Collection() {
     {
       name: 'LU Water',
       price: '30 ml — 59 zł',
-      image: imgWater30,
+      image: './images/LU/packshot-1.jpg',
       alt: 'LU Water — 30ml butelka na bazie wody',
       highlight: false,
     },
     {
       name: 'LU Silicone',
       price: '30 ml — 69 zł',
-      image: imgSilicone30,
+      image: './images/LU/packshot-2.jpg',
       alt: 'LU Silicone — 30ml butelka na bazie silikonu',
       highlight: true,
-    },
-    {
-      name: 'LU Luxury',
-      price: '100 ml — 149 zł',
-      image: imgLuxury,
-      alt: 'LU Luxury — 100ml pełnowymiarowa butelka',
-      highlight: false,
     },
   ]
 
@@ -42,7 +35,7 @@ export default function Collection() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
           {products.map((p, i) => (
             <div
               key={p.name}

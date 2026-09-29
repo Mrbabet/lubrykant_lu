@@ -3,16 +3,17 @@ import heroProductImg from '../assets/LU-S-30-ml.webp'
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden" id="start">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/images/hero-product.jpg"
-          alt="LU Luxury Lubricant — butelka na ciemnym tle"
-          className="h-full w-full object-cover opacity-40"
-          width={1400}
-          height={788}
+      {/* Background video */}
+      <div className="absolute inset-0 z-0 bg-black">
+        <video
+          src="./images/LU/wideo_intro_landscape.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="h-full w-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
       </div>
 
       <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-6 py-32 md:grid-cols-2 md:items-center mt-12">
@@ -46,23 +47,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Product image with generated background */}
-        <div className="reveal reveal-delay-2 hidden justify-center md:flex relative w-full max-w-[450px] aspect-[4/5] mx-auto rounded-3xl overflow-hidden shadow-2xl">
-          <img
-            src="/images/luxury-bg.jpg"
-            alt="Eleganckie, luksusowe tło pod butelkę"
-            className="absolute inset-0 h-full w-full object-cover opacity-90"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <img
-              src={heroProductImg}
-              alt="LU butelka — luksusowy lubrykant silikonowy"
-              className="h-[75%] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] hover:scale-105 transition-transform duration-700"
-              loading="lazy"
-            />
-          </div>
-        </div>
+
       </div>
     </section>
   )

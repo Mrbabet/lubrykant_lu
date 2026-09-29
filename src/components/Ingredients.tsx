@@ -24,11 +24,11 @@ export default function Ingredients() {
     <section className="bg-[var(--color-bg-card)] py-24 md:py-32" id="skladniki">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-16 md:grid-cols-2">
-          <div className="reveal order-2 md:order-1">
+          <div className="reveal order-2 md:order-1 bg-black/20 rounded-2xl p-8 flex items-center justify-center">
             <img
-              src="/images/ingredients.jpg"
-              alt="Składniki LU — naturalne ingredienty na marmurowej powierzchni"
-              className="rounded-2xl object-cover shadow-2xl opacity-90"
+              src="./images/LU/packshot-1.jpg"
+              alt="Butelka lubrykantu LU"
+              className="rounded-2xl object-contain max-h-[500px] shadow-2xl opacity-100 mix-blend-lighten"
               loading="lazy"
             />
           </div>
