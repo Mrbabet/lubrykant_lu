@@ -25,17 +25,12 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#kolekcja" className="transition-colors hover:text-[var(--color-gold)]">
-                  LU Travel (15ml)
+                  LU Wodny
                 </a>
               </li>
               <li>
                 <a href="#kolekcja" className="transition-colors hover:text-[var(--color-gold)]">
-                  LU Classic (50ml)
-                </a>
-              </li>
-              <li>
-                <a href="#kolekcja" className="transition-colors hover:text-[var(--color-gold)]">
-                  LU Luxury (100ml)
+                  LU Silikonowy
                 </a>
               </li>
             </ul>

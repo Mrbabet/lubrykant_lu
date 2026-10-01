@@ -2,17 +2,17 @@
 export default function Collection() {
   const products = [
     {
-      name: 'LU Water',
-      price: '30 ml — 59 zł',
+      name: 'LU Wodny',
+      price: '30 ml — 39,99 zł',
       image: './images/LU/packshot-1.jpg',
-      alt: 'LU Water — 30ml butelka na bazie wody',
+      alt: 'LU Wodny — 30ml butelka na bazie wody',
       highlight: false,
     },
     {
-      name: 'LU Silicone',
-      price: '30 ml — 69 zł',
+      name: 'LU Silikonowy',
+      price: '30 ml — 59,99 zł',
       image: './images/LU/packshot-2.jpg',
-      alt: 'LU Silicone — 30ml butelka na bazie silikonu',
+      alt: 'LU Silikonowy — 30ml butelka na bazie silikonu',
       highlight: true,
     },
   ]
