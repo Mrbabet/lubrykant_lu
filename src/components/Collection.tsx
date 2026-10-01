@@ -50,7 +50,9 @@ export default function Collection() {
                 <h3 className="font-heading text-2xl font-bold text-white">{p.name}</h3>
                 <p className="mt-2 mb-8 text-[var(--color-gold)]">{p.price}</p>
                 <a
-                  href="#kontakt"
+                  href="https://drogeria.biz"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`w-full px-6 py-3 text-xs font-semibold tracking-widest uppercase transition-all ${
                     p.highlight
                       ? 'bg-[var(--color-gold)] text-black hover:bg-[var(--color-gold-hover)]'
