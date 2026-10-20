@@ -7,6 +7,7 @@ import Lifestyle from './components/Lifestyle'
 import Collection from './components/Collection'
 import Ingredients from './components/Ingredients'
 import Story from './components/Story'
+import Faq from './components/Faq'
 import Footer from './components/Footer'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Collection />
         <Ingredients />
         <Story />
+        <Faq />
       </main>
       <Footer />
     </>

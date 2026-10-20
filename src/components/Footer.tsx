@@ -49,6 +49,11 @@ export default function Footer() {
                   Składniki
                 </a>
               </li>
+              <li>
+                <a href="#faq" className="transition-colors hover:text-[var(--color-gold)]">
+                  FAQ
+                </a>
+              </li>
             </ul>
           </div>
 

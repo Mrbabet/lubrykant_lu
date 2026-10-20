@@ -17,6 +17,7 @@ export default function Navbar() {
     { href: '#kolekcja', label: 'Kolekcja' },
     { href: '#skladniki', label: 'Składniki' },
     { href: '#historia', label: 'O nas' },
+    { href: '#faq', label: 'FAQ' },
   ]
 
   const closeMobile = () => setMobileOpen(false)

@@ -7,12 +7,12 @@ export default function Ingredients() {
       desc: 'Wybierz idealną konsystencję dla siebie. Opcja silikonowa to ultra-gładkość, wodna to naturalna lekkość.',
     },
     {
-      title: 'Witamina E',
-      desc: 'Naturalny antyoksydant, nawilża i chroni delikatną skórę.',
+      title: 'Krótki skład',
+      desc: 'Tylko 3 składniki w wersji silikonowej i 5 w wodnej. Bez substancji zapachowych i barwników.',
     },
     {
       title: 'Bez parabenów',
-      desc: 'Czysta formuła bez konserwantów syntetycznych.',
+      desc: 'Formuła wolna od parabenów.',
     },
     {
       title: 'Hipoalergiczna',
