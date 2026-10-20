@@ -16,7 +16,6 @@ export default function Navbar() {
     { href: '#o-produkcie', label: 'O produkcie' },
     { href: '#kolekcja', label: 'Kolekcja' },
     { href: '#skladniki', label: 'Składniki' },
-    { href: '#opinie', label: 'Opinie' },
     { href: '#historia', label: 'O nas' },
   ]
 

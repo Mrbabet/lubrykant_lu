@@ -49,16 +49,6 @@ export default function Footer() {
                   Składniki
                 </a>
               </li>
-              <li>
-                <a href="#" className="transition-colors hover:text-[var(--color-gold)]">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition-colors hover:text-[var(--color-gold)]">
-                  Wysyłka i zwroty
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -70,16 +60,6 @@ export default function Footer() {
                   kontakt@lubrykant-lu.pl
                 </a>
               </li>
-              <li>
-                <a href="#" className="transition-colors hover:text-[var(--color-gold)]">
-                  Polityka prywatności
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition-colors hover:text-[var(--color-gold)]">
-                  Regulamin
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -88,17 +68,17 @@ export default function Footer() {
           <p className="text-sm text-white/40">
             &copy; 2026 LU — Lubrykant Premium. Wszelkie prawa zastrzeżone.
           </p>
-          <div className="flex gap-4">
-            <a href="#" className="text-white/40 transition-colors hover:text-[var(--color-gold)]" aria-label="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          <p className="text-sm text-white/40">
+            Sprzedaż prowadzi{' '}
+            <a
+              href="https://drogeria.biz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline transition-colors hover:text-[var(--color-gold)]"
+            >
+              drogeria.biz
             </a>
-            <a href="#" className="text-white/40 transition-colors hover:text-[var(--color-gold)]" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            </a>
-            <a href="#" className="text-white/40 transition-colors hover:text-[var(--color-gold)]" aria-label="TikTok">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
-            </a>
-          </div>
+          </p>
         </div>
       </div>
     </footer>

@@ -6,7 +6,6 @@ import Features from './components/Features'
 import Lifestyle from './components/Lifestyle'
 import Collection from './components/Collection'
 import Ingredients from './components/Ingredients'
-import Testimonials from './components/Testimonials'
 import Story from './components/Story'
 import Footer from './components/Footer'
 
@@ -23,7 +22,6 @@ function App() {
         <Lifestyle />
         <Collection />
         <Ingredients />
-        <Testimonials />
         <Story />
       </main>
       <Footer />
