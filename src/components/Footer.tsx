@@ -1,8 +1,9 @@
+import { withUtm } from '../data/products'
 import logoSrc from '../assets/LU.webp'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[var(--color-bg-elevated)] pt-20 pb-10">
+    <footer className="border-t border-white/10 bg-[var(--color-bg-elevated)] pt-20 pb-28 md:pb-10">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-12 md:grid-cols-3 lg:gap-16">
           <div className="col-span-1">
@@ -70,7 +71,7 @@ export default function Footer() {
           <p className="text-sm text-white/40">
             Sprzedaż prowadzi{' '}
             <a
-              href="https://drogeria.biz"
+              href={withUtm('https://drogeria.biz/', 'stopka')}
               target="_blank"
               rel="noopener noreferrer"
               className="underline transition-colors hover:text-[var(--color-gold)]"

@@ -1,4 +1,4 @@
-import { products, formatPrice } from '../data/products'
+import { products, formatPrice, withUtm } from '../data/products'
 
 export default function Collection() {
   return (
@@ -38,7 +38,7 @@ export default function Collection() {
                 </h3>
                 <p className="mt-2 mb-8 text-[var(--color-gold)]">{p.volume} — {formatPrice(p.price)}</p>
                 <a
-                  href={p.shopUrl}
+                  href={withUtm(p.shopUrl, 'kolekcja')}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full px-6 py-3 text-xs font-semibold tracking-widest uppercase transition-all ${

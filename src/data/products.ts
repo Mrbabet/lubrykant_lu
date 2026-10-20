@@ -78,6 +78,19 @@ export const products: Product[] = [
   },
 ]
 
+/**
+ * Adds UTM tags so drogeria.biz analytics can attribute orders to this site.
+ * `placement` says which button was clicked (shows up as utm_content).
+ */
+export const withUtm = (url: string, placement: string) => {
+  const u = new URL(url)
+  u.searchParams.set('utm_source', 'lubrykantlu')
+  u.searchParams.set('utm_medium', 'referral')
+  u.searchParams.set('utm_campaign', 'strona-marki')
+  u.searchParams.set('utm_content', placement)
+  return u.toString()
+}
+
 export const formatPrice = (price: number) =>
   `${price.toFixed(2).replace('.', ',')} zł`
 

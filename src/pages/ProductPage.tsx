@@ -1,5 +1,5 @@
 import { CheckCircle2, Info } from 'lucide-react'
-import { products, formatPrice, productJsonLd, type Product } from '../data/products'
+import { products, formatPrice, productJsonLd, withUtm, type Product } from '../data/products'
 
 export default function ProductPage({ product: p }: { product: Product }) {
   const other = products.find((o) => o.slug !== p.slug)
@@ -37,7 +37,7 @@ export default function ProductPage({ product: p }: { product: Product }) {
               <p className="mt-6 text-lg leading-relaxed text-white/70">{p.lead}</p>
               <p className="mt-8 font-heading text-3xl text-[var(--color-gold)]">{formatPrice(p.price)}</p>
               <a
-                href={p.shopUrl}
+                href={withUtm(p.shopUrl, 'strona-produktu')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-block bg-[var(--color-gold)] px-10 py-4 text-sm font-semibold tracking-widest text-black uppercase transition-all hover:-translate-y-0.5 hover:bg-[var(--color-gold-hover)]"
