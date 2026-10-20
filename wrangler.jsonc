@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Must match the Worker name in the Cloudflare dashboard
+  "name": "lubrykant-lu",
+  "compatibility_date": "2026-10-01",
+  // Static site: serve the Vite build output
+  "assets": {
+    "directory": "./dist"
+  },
+  // Mirrors the dashboard settings so deploys don't report a config mismatch
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    },
+    "traces": {
+      "enabled": false,
+      "head_sampling_rate": 1,
+      "persist": true
+    }
+  }
+}
