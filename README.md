@@ -40,7 +40,8 @@ pnpm run preview
 - `src/pages/` — podstrony: strona główna, strony produktów, poradnik, 404
 - `src/components/` — sekcje strony głównej, nawigacja i stopka
 - `src/data/` — dane produktów (ceny, skład, linki do sklepu) i poradników
-- `scripts/prerender.mjs` — po buildzie generuje gotowy HTML każdej podstrony (SEO)
+- `scripts/prerender.mjs` — po buildzie generuje gotowy HTML każdej podstrony oraz `sitemap.xml` (SEO)
+- `src/site.ts` — adres domeny (`https://lubrykantlu.com`), używany w canonical, sitemapie i danych strukturalnych
 - `public/images/` — zdjęcia i wideo używane na stronie (serwowane bez przetwarzania)
 - `media-source/` — oryginały i materiały niewykorzystane na stronie (nie trafiają do builda)
 

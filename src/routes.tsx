@@ -10,6 +10,8 @@ export type Route = {
   path: string
   title: string
   description: string
+  /** Social preview image; defaults to DEFAULT_OG_IMAGE */
+  image?: string
   element: ReactNode
 }
 
@@ -25,6 +27,7 @@ export const routes: Route[] = [
     path: `/${p.slug}`,
     title: `Lubrykant ${p.name} ${p.volume} — skład i cena | LU`,
     description: p.lead,
+    image: p.image,
     element: <ProductPage product={p} />,
   })),
   {

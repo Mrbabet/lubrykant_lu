@@ -1,5 +1,6 @@
 import { products } from '../data/products'
 import { guideMeta } from '../data/guides'
+import { SITE_URL, DEFAULT_OG_IMAGE } from '../site'
 
 const rows: [string, string, string][] = [
   ['Baza', 'woda', 'silikon'],
@@ -20,6 +21,8 @@ const jsonLd = {
   author: { '@type': 'Organization', name: 'LU' },
   publisher: { '@type': 'Organization', name: 'LU' },
   inLanguage: 'pl',
+  image: `${SITE_URL}${DEFAULT_OG_IMAGE}`,
+  mainEntityOfPage: `${SITE_URL}/poradnik/lubrykant-wodny-czy-silikonowy`,
 }
 
 export default function GuideWaterVsSilicone() {

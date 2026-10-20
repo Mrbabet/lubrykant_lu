@@ -1,3 +1,5 @@
+import { SITE_URL } from '../site'
+
 // Product facts come from the drogeria.biz product pages — keep them in sync.
 
 export type Product = {
@@ -84,7 +86,8 @@ export const productJsonLd = (p: Product) => ({
   '@type': 'Product',
   name: `Lubrykant ${p.name} ${p.volume}`,
   brand: { '@type': 'Brand', name: 'LU' },
-  image: p.image,
+  image: `${SITE_URL}${p.image}`,
+  url: `${SITE_URL}/${p.slug}`,
   description: p.lead,
   countryOfOrigin: 'PL',
   offers: {
