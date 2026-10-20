@@ -34,11 +34,18 @@ pnpm run build
 pnpm run preview
 ```
 
-## Dokumentacja
+## Struktura
 
-Główne wytyczne dla programistów AI i deweloperów (w tym tone of voice, paleta barw, ograniczenia budżetu CI) znajdują się w pliku `AGENTS.md`.
+- `src/components/` — sekcje strony (Hero, Philosophy, Features, Lifestyle, Collection, Ingredients, Testimonials, Story, Footer)
+- `public/images/` — zdjęcia i wideo używane na stronie (serwowane bez przetwarzania)
+- `media-source/` — oryginały i materiały niewykorzystane na stronie (nie trafiają do builda)
 
-Inne ważne dokumenty w repozytorium:
-- `docs/implementation/design-spec.md` — specyfikacja Dark Luxury Theme
-- `docs/implementation/decisions.md` — log decyzji architektonicznych
-- `inspirations/prd-v5/02-prd-v5.md` — główna specyfikacja produktu
+Zdjęcia w `public/` są zoptymalizowane (max. 1600 px, JPEG q80). Nowe zdjęcia przed dodaniem warto zmniejszyć, np.:
+
+```bash
+sips -Z 1600 -s formatOptions 80 plik.jpg
+```
+
+## Wdrożenie
+
+Strona jest hostowana na Cloudflare Pages — katalog wyjściowy builda: `dist`.

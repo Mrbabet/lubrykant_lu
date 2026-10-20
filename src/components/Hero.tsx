@@ -32,23 +32,19 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="https://drogeria.biz"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#kolekcja"
               className="bg-[var(--color-gold)] px-8 py-4 text-sm font-semibold tracking-widest text-black uppercase transition-all hover:-translate-y-0.5 hover:bg-[var(--color-gold-hover)] hover:shadow-lg"
             >
               Kup online
             </a>
             <a
-              href="#kolekcja"
+              href="#o-produkcie"
               className="border border-white/30 px-8 py-4 text-sm font-semibold tracking-widest text-white uppercase transition-all hover:border-white hover:bg-white hover:text-black"
             >
-              Odkryj kolekcję
+              Poznaj LU
             </a>
           </div>
         </div>
-
-
       </div>
     </section>
   )

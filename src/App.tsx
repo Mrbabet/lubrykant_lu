@@ -8,7 +8,6 @@ import Collection from './components/Collection'
 import Ingredients from './components/Ingredients'
 import Testimonials from './components/Testimonials'
 import Story from './components/Story'
-import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
         <Ingredients />
         <Testimonials />
         <Story />
-        <Newsletter />
       </main>
       <Footer />
     </>

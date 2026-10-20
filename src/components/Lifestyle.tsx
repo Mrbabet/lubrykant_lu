@@ -3,7 +3,7 @@ export default function Lifestyle() {
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/couple-lifestyle.jpg"
+          src="./images/couple-lifestyle.jpg"
           alt="Intymna chwila bliskości — dłonie splecione na jedwabnej pościeli"
           className="h-full w-full object-cover opacity-60"
           width={1400}

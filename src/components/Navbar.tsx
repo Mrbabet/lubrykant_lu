@@ -50,7 +50,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="#kontakt"
+                href="#kolekcja"
                 className="border border-[var(--color-gold)] px-5 py-2 text-xs font-semibold tracking-widest text-[var(--color-gold)] uppercase transition-all hover:bg-[var(--color-gold)] hover:text-black"
               >
                 Kup teraz
@@ -84,7 +84,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#kontakt"
+            href="#kolekcja"
             onClick={closeMobile}
             className="mt-4 bg-[var(--color-gold)] px-8 py-3 text-sm font-semibold tracking-widest text-black uppercase transition-colors hover:bg-[var(--color-gold-hover)]"
           >
