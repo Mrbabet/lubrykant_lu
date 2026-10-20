@@ -7,6 +7,7 @@ export default function Collection() {
       image: './images/LU/packshot-1.jpg',
       alt: 'LU Wodny — 30ml butelka na bazie wody',
       highlight: false,
+      link: 'https://drogeria.biz/pl/p/LUBRYKANT-LU-WODNY-ZEL-INTYMNY-LU-W-30-ML/76',
     },
     {
       name: 'LU Silikonowy',
@@ -14,6 +15,7 @@ export default function Collection() {
       image: './images/LU/packshot-2.jpg',
       alt: 'LU Silikonowy — 30ml butelka na bazie silikonu',
       highlight: true,
+      link: 'https://drogeria.biz/pl/p/LUBRYKANT-LU-SILIKONOWY-ZEL-INTYMNY-LU-S-30-ML/75',
     },
   ]
 
@@ -50,7 +52,7 @@ export default function Collection() {
                 <h3 className="font-heading text-2xl font-bold text-white">{p.name}</h3>
                 <p className="mt-2 mb-8 text-[var(--color-gold)]">{p.price}</p>
                 <a
-                  href="https://drogeria.biz"
+                  href={p.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full px-6 py-3 text-xs font-semibold tracking-widest uppercase transition-all ${
