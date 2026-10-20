@@ -19,17 +19,17 @@ export default function Footer() {
             <h3 className="mb-6 font-bold text-white uppercase tracking-widest">Sklep</h3>
             <ul className="space-y-4 text-white/60">
               <li>
-                <a href="#kolekcja" className="transition-colors hover:text-[var(--color-gold)]">
+                <a href="/#kolekcja" className="transition-colors hover:text-[var(--color-gold)]">
                   Kolekcja
                 </a>
               </li>
               <li>
-                <a href="#kolekcja" className="transition-colors hover:text-[var(--color-gold)]">
+                <a href="/lubrykant-wodny" className="transition-colors hover:text-[var(--color-gold)]">
                   LU Wodny
                 </a>
               </li>
               <li>
-                <a href="#kolekcja" className="transition-colors hover:text-[var(--color-gold)]">
+                <a href="/lubrykant-silikonowy" className="transition-colors hover:text-[var(--color-gold)]">
                   LU Silikonowy
                 </a>
               </li>
@@ -40,18 +40,23 @@ export default function Footer() {
             <h3 className="mb-6 font-bold text-white uppercase tracking-widest">Informacje</h3>
             <ul className="space-y-4 text-white/60">
               <li>
-                <a href="#historia" className="transition-colors hover:text-[var(--color-gold)]">
+                <a href="/#historia" className="transition-colors hover:text-[var(--color-gold)]">
                   O nas
                 </a>
               </li>
               <li>
-                <a href="#skladniki" className="transition-colors hover:text-[var(--color-gold)]">
+                <a href="/#skladniki" className="transition-colors hover:text-[var(--color-gold)]">
                   Składniki
                 </a>
               </li>
               <li>
-                <a href="#faq" className="transition-colors hover:text-[var(--color-gold)]">
+                <a href="/#faq" className="transition-colors hover:text-[var(--color-gold)]">
                   FAQ
+                </a>
+              </li>
+              <li>
+                <a href="/poradnik/lubrykant-wodny-czy-silikonowy" className="transition-colors hover:text-[var(--color-gold)]">
+                  Wodny czy silikonowy?
                 </a>
               </li>
             </ul>

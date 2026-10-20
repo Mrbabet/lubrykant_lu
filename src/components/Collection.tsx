@@ -1,24 +1,6 @@
+import { products, formatPrice } from '../data/products'
 
 export default function Collection() {
-  const products = [
-    {
-      name: 'LU Wodny',
-      price: '30 ml — 39,99 zł',
-      image: './images/LU/packshot-1.jpg',
-      alt: 'LU Wodny — 30ml butelka na bazie wody',
-      highlight: false,
-      link: 'https://drogeria.biz/pl/p/LUBRYKANT-LU-WODNY-ZEL-INTYMNY-LU-W-30-ML/76',
-    },
-    {
-      name: 'LU Silikonowy',
-      price: '30 ml — 59,99 zł',
-      image: './images/LU/packshot-2.jpg',
-      alt: 'LU Silikonowy — 30ml butelka na bazie silikonu',
-      highlight: true,
-      link: 'https://drogeria.biz/pl/p/LUBRYKANT-LU-SILIKONOWY-ZEL-INTYMNY-LU-S-30-ML/75',
-    },
-  ]
-
   return (
     <section className="bg-[var(--color-bg)] py-24 md:py-32" id="kolekcja">
       <div className="mx-auto max-w-7xl px-6">
@@ -49,10 +31,14 @@ export default function Collection() {
                 />
               </div>
               <div className="flex flex-col items-center p-8 text-center">
-                <h3 className="font-heading text-2xl font-bold text-white">{p.name}</h3>
-                <p className="mt-2 mb-8 text-[var(--color-gold)]">{p.price}</p>
+                <h3 className="font-heading text-2xl font-bold text-white">
+                  <a href={`/${p.slug}`} className="transition-colors hover:text-[var(--color-gold)]">
+                    {p.name}
+                  </a>
+                </h3>
+                <p className="mt-2 mb-8 text-[var(--color-gold)]">{p.volume} — {formatPrice(p.price)}</p>
                 <a
-                  href={p.link}
+                  href={p.shopUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full px-6 py-3 text-xs font-semibold tracking-widest uppercase transition-all ${
@@ -62,6 +48,12 @@ export default function Collection() {
                   }`}
                 >
                   Kup w drogeria.biz
+                </a>
+                <a
+                  href={`/${p.slug}`}
+                  className="mt-4 text-xs tracking-widest text-white/60 uppercase underline-offset-4 transition-colors hover:text-[var(--color-gold)] hover:underline"
+                >
+                  Szczegóły i skład
                 </a>
               </div>
             </div>

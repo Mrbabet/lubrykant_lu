@@ -3,7 +3,7 @@ export default function Lifestyle() {
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="./images/couple-lifestyle.jpg"
+          src="/images/couple-lifestyle.jpg"
           alt="Intymna chwila bliskości — dłonie splecione na jedwabnej pościeli"
           className="h-full w-full object-cover opacity-60"
           width={1400}
@@ -27,7 +27,7 @@ export default function Lifestyle() {
           gładkość.
         </p>
         <a
-          href="#kolekcja"
+          href="/#kolekcja"
           className="border border-white/50 px-8 py-4 text-sm font-semibold tracking-widest text-white uppercase transition-all hover:border-white hover:bg-white hover:text-black"
         >
           Zobacz produkty

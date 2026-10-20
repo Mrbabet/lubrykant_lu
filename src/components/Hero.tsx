@@ -5,7 +5,8 @@ export default function Hero() {
       {/* Background video */}
       <div className="absolute inset-0 z-0 bg-black">
         <video
-          src="./images/LU/wideo_intro_landscape.mp4"
+          src="/images/LU/hero.mp4"
+          poster="/images/LU/hero-poster.jpg"
           autoPlay
           muted
           loop
@@ -32,13 +33,13 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="#kolekcja"
+              href="/#kolekcja"
               className="bg-[var(--color-gold)] px-8 py-4 text-sm font-semibold tracking-widest text-black uppercase transition-all hover:-translate-y-0.5 hover:bg-[var(--color-gold-hover)] hover:shadow-lg"
             >
               Kup online
             </a>
             <a
-              href="#o-produkcie"
+              href="/#o-produkcie"
               className="border border-white/30 px-8 py-4 text-sm font-semibold tracking-widest text-white uppercase transition-all hover:border-white hover:bg-white hover:text-black"
             >
               Poznaj LU

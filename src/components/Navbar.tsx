@@ -13,11 +13,11 @@ export default function Navbar() {
   }, [])
 
   const links = [
-    { href: '#o-produkcie', label: 'O produkcie' },
-    { href: '#kolekcja', label: 'Kolekcja' },
-    { href: '#skladniki', label: 'Składniki' },
-    { href: '#historia', label: 'O nas' },
-    { href: '#faq', label: 'FAQ' },
+    { href: '/#o-produkcie', label: 'O produkcie' },
+    { href: '/#kolekcja', label: 'Kolekcja' },
+    { href: '/#skladniki', label: 'Składniki' },
+    { href: '/#historia', label: 'O nas' },
+    { href: '/#faq', label: 'FAQ' },
   ]
 
   const closeMobile = () => setMobileOpen(false)
@@ -32,7 +32,7 @@ export default function Navbar() {
         aria-label="Nawigacja główna"
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
-          <a href="#" className="flex items-center" aria-label="Strona główna">
+          <a href="/" className="flex items-center" aria-label="Strona główna">
             <img src={logoSrc} alt="LU Logo" className="h-12 w-auto object-contain" />
           </a>
 
@@ -50,7 +50,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="#kolekcja"
+                href="/#kolekcja"
                 className="border border-[var(--color-gold)] px-5 py-2 text-xs font-semibold tracking-widest text-[var(--color-gold)] uppercase transition-all hover:bg-[var(--color-gold)] hover:text-black"
               >
                 Kup teraz
@@ -84,7 +84,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#kolekcja"
+            href="/#kolekcja"
             onClick={closeMobile}
             className="mt-4 bg-[var(--color-gold)] px-8 py-3 text-sm font-semibold tracking-widest text-black uppercase transition-colors hover:bg-[var(--color-gold-hover)]"
           >

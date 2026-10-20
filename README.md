@@ -36,7 +36,11 @@ pnpm run preview
 
 ## Struktura
 
-- `src/components/` — sekcje strony (Hero, Philosophy, Features, Lifestyle, Collection, Ingredients, Testimonials, Story, Footer)
+- `src/routes.tsx` — lista podstron (adres, tytuł, opis meta)
+- `src/pages/` — podstrony: strona główna, strony produktów, poradnik, 404
+- `src/components/` — sekcje strony głównej, nawigacja i stopka
+- `src/data/` — dane produktów (ceny, skład, linki do sklepu) i poradników
+- `scripts/prerender.mjs` — po buildzie generuje gotowy HTML każdej podstrony (SEO)
 - `public/images/` — zdjęcia i wideo używane na stronie (serwowane bez przetwarzania)
 - `media-source/` — oryginały i materiały niewykorzystane na stronie (nie trafiają do builda)
 
@@ -46,6 +50,12 @@ Zdjęcia w `public/` są zoptymalizowane (max. 1600 px, JPEG q80). Nowe zdjęcia
 sips -Z 1600 -s formatOptions 80 plik.jpg
 ```
 
+## Dodawanie podstrony
+
+1. Utwórz komponent w `src/pages/`.
+2. Dodaj wpis do `routes` w `src/routes.tsx` (adres, tytuł, opis).
+3. `pnpm run build` wygeneruje `dist/<adres>/index.html`.
+
 ## Wdrożenie
 
-Strona jest hostowana na Cloudflare Pages — katalog wyjściowy builda: `dist`.
+Strona jest hostowana jako Cloudflare Worker ze statycznymi plikami (`wrangler.jsonc`). Build command: `pnpm run build`, deploy command: `npx wrangler deploy`.
