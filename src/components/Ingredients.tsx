@@ -7,8 +7,12 @@ export default function Ingredients() {
       desc: 'Wybierz idealną konsystencję dla siebie. Opcja silikonowa to ultra-gładkość, wodna to naturalna lekkość.',
     },
     {
-      title: 'Krótki skład',
-      desc: 'Tylko 3 składniki w wersji silikonowej i 5 w wodnej. Bez substancji zapachowych i barwników.',
+      title: 'Skład LU Wodny (INCI)',
+      desc: 'Aqua, Propanediol, Polyquaternium-10, Sodium Benzoate, Potassium Sorbate.',
+    },
+    {
+      title: 'Skład LU Silikonowy (INCI)',
+      desc: 'Cyclopentasiloxane, Dimethiconol, Dimethicone.',
     },
     {
       title: 'Bez parabenów',
@@ -16,7 +20,7 @@ export default function Ingredients() {
     },
     {
       title: 'Hipoalergiczna',
-      desc: 'Dermatologicznie przebadana, bezpieczna dla wrażliwej skóry.',
+      desc: 'Przebadana dermatologicznie. Produkt polski.',
     },
   ]
 
@@ -51,7 +55,7 @@ export default function Ingredients() {
                 <li key={item.title} className="flex gap-4">
                   <CheckCircle2 className="mt-1 h-6 w-6 shrink-0 text-[var(--color-gold)]" />
                   <div>
-                    <h4 className="font-bold text-white">{item.title}</h4>
+                    <h3 className="font-bold text-white">{item.title}</h3>
                     <p className="text-white/60">{item.desc}</p>
                   </div>
                 </li>

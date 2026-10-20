@@ -21,8 +21,8 @@ export default function Story() {
               </p>
               <p>
                 Każda butelka LU jest zaprojektowana tak, aby budzić zachwyt i pewność siebie. Nasza
-                formuła jest wynikiem miesięcy badań i współpracy z dermatologami, aby zapewnić
-                najwyższy komfort i bezpieczeństwo.
+                formuła została przebadana dermatologicznie, aby zapewnić najwyższy komfort
+                i bezpieczeństwo.
               </p>
               <p>
                 Wierzymy, że intymność zasługuje na najlepsze — dlatego nie idziemy na żadne

@@ -10,12 +10,12 @@ export default function Features() {
     {
       icon: <ShieldCheck className="h-8 w-8 text-[var(--color-gold)]" />,
       title: 'Bezpieczna formuła',
-      desc: 'Dermatologicznie przetestowana, hipoalergiczna i bezpieczna dla ciała. Bez parabenów, gliceryny i sztucznych barwników.',
+      desc: 'Przebadana dermatologicznie i hipoalergiczna. Bez parabenów, gliceryny i sztucznych barwników.',
     },
     {
       icon: <Sparkles className="h-8 w-8 text-[var(--color-gold)]" />,
       title: 'Premium design',
-      desc: 'Elegancka butelka z matowego szkła, którą z dumą postawisz na szafce nocnej. Dyskretna, piękna i funkcjonalna.',
+      desc: 'Elegancka, matowa butelka z precyzyjnym dozownikiem, którą z dumą postawisz na szafce nocnej. Dyskretna, piękna i funkcjonalna.',
     },
   ]
 

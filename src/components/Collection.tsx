@@ -61,7 +61,7 @@ export default function Collection() {
                       : 'border border-[var(--color-gold)] text-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-black'
                   }`}
                 >
-                  Dodaj do koszyka
+                  Kup w drogeria.biz
                 </a>
               </div>
             </div>

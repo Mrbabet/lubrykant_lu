@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[var(--color-bg-elevated)] pt-20 pb-10">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid gap-12 md:grid-cols-4 lg:gap-16">
+        <div className="grid gap-12 md:grid-cols-3 lg:gap-16">
           <div className="col-span-1">
             <div className="mb-6">
               <img src={logoSrc} alt="LU Logo" className="h-16 w-auto object-contain" />
@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-6 font-bold text-white uppercase tracking-widest">Sklep</h4>
+            <h3 className="mb-6 font-bold text-white uppercase tracking-widest">Sklep</h3>
             <ul className="space-y-4 text-white/60">
               <li>
                 <a href="#kolekcja" className="transition-colors hover:text-[var(--color-gold)]">
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-6 font-bold text-white uppercase tracking-widest">Informacje</h4>
+            <h3 className="mb-6 font-bold text-white uppercase tracking-widest">Informacje</h3>
             <ul className="space-y-4 text-white/60">
               <li>
                 <a href="#historia" className="transition-colors hover:text-[var(--color-gold)]">
@@ -52,17 +52,6 @@ export default function Footer() {
               <li>
                 <a href="#faq" className="transition-colors hover:text-[var(--color-gold)]">
                   FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="mb-6 font-bold text-white uppercase tracking-widest">Kontakt</h4>
-            <ul className="space-y-4 text-white/60">
-              <li>
-                <a href="mailto:kontakt@lubrykant-lu.pl" className="transition-colors hover:text-[var(--color-gold)]">
-                  kontakt@lubrykant-lu.pl
                 </a>
               </li>
             </ul>
